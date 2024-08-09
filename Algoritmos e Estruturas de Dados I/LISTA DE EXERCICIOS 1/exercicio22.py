@@ -5,6 +5,7 @@ print('Ímpares: ', end='')
 
 if numb % 2 == 0:
     numb = numb + 1
+    
     while cont != 6:
         cont = cont + 1
         print(numb, end=' - ' if cont != 6 else '')
