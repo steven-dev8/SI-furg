@@ -15,7 +15,7 @@ nota_menor = nota1
 nota2 = float(input('Nota2: '))
 if nota_maior < nota2:#Se nota_maior for menor que nota2, então nota_maior receberá o valor de nota2
     nota_maior = nota2
-if nota_menor > nota2:#Se nota_menor for menor que nota2, então nota_menor receberá o valor de nota2
+if nota_menor > nota2:#Se nota_menor for maior que nota2, então nota_menor receberá o valor de nota2
     nota_menor = nota2
 
 #Segue a sentença aplicando o bloco de condicionais da nota3 até a nota7
