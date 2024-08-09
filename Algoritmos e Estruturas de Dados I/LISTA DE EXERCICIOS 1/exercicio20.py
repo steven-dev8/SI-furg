@@ -34,6 +34,7 @@ while nome != "FIM":
         nome_maior = nome
         salario_menor = salario
         nome_menor = nome
+        
         c = c + 1
         soma_salario = salario
         cont_salario = cont_salario + 1
