@@ -1,15 +1,23 @@
+"""Escreva um programa que leia diversos funcionários e seu respectivo salario, ate que
+o nome de um funcionário seja “fim”. Em seguida escreva:
+a) O nome do funcionário com maior salário
+b) O nome do funcionário com menor salário
+c) A média dos salários digitados"""
+
 soma_salario = 0
 cont_salario = 0
 c = 0
+nome = ''
 
-while True:
-    nome = input('Nome: ').upper()
-    if nome == 'FIM':
-        break
+print('DIGITE "FIM" PARA TERMINAR O PROGRAMA')
 
-    salario = float(input('Salário: '))
+while nome != "FIM":
+    nome = input('Nome: ').upper() 
 
-    if c == 1:
+    if nome != 'FIM':
+        salario = float(input('Salário: '))
+
+    if c == 1 and nome != 'FIM':
         if salario > salario_maior:
             nome_maior = nome
             salario_maior = salario
@@ -18,19 +26,21 @@ while True:
             salario_menor = salario
             nome_menor = nome
 
-    if c == 0:
+        soma_salario = soma_salario + salario
+        cont_salario = cont_salario + 1
+
+    if c == 0 and nome != 'FIM':
         salario_maior = salario
         nome_maior = nome
         salario_menor = salario
         nome_menor = nome
         c = c + 1
-
-    soma_salario = soma_salario + salario
-    cont_salario = cont_salario + 1
+        soma_salario = salario
+        cont_salario = cont_salario + 1
 
 media = soma_salario / cont_salario
 
 print('-' * 35)
-print(f'O MAIOR SALÁRIO É DO {nome_maior} COM R${salario_maior:.2f}')
-print(f'O MENOR SALÁRIO É DO {nome_menor} COM R${salario_menor:.2f}')
+print(f'O MAIOR SALÁRIO É DE {nome_maior} COM R${salario_maior:.2f}')
+print(f'O MENOR SALÁRIO É DE {nome_menor} COM R${salario_menor:.2f}')
 print(f'A MÉDIA DO SALÁRIOS É DE R${media:.2f}')
