@@ -17,27 +17,27 @@ while nome != "FIM":
     if nome != 'FIM':
         salario = float(input('Salário: '))
 
-    if c == 1 and nome != 'FIM':
-        if salario > salario_maior:
-            nome_maior = nome
-            salario_maior = salario
+        if c == 1:
+            if salario > salario_maior:
+                nome_maior = nome
+                salario_maior = salario
 
-        if salario < salario_menor:
+            if salario < salario_menor:
+                salario_menor = salario
+                nome_menor = nome
+
+            soma_salario = soma_salario + salario
+            cont_salario = cont_salario + 1
+
+        if c == 0:
+            salario_maior = salario
+            nome_maior = nome
             salario_menor = salario
             nome_menor = nome
-
-        soma_salario = soma_salario + salario
-        cont_salario = cont_salario + 1
-
-    if c == 0 and nome != 'FIM':
-        salario_maior = salario
-        nome_maior = nome
-        salario_menor = salario
-        nome_menor = nome
-        
-        c = c + 1
-        soma_salario = salario
-        cont_salario = cont_salario + 1
+            
+            c = c + 1
+            soma_salario = salario
+            cont_salario = cont_salario + 1
 
 media = soma_salario / cont_salario
 
