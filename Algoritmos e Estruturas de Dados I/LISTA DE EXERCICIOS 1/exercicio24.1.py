@@ -5,6 +5,7 @@ apresentação dadas pelos sete jurados. Ao final, informe a melhor nota, a pior
 a sua média final, conforme a descrição acima informada (ou seja, retirar a melhor e
 a pior nota para calcular a média). As notas não são informadas em ordem (crescente
 ou decrescente)."""
+
 media = 0
 count = 0
 
