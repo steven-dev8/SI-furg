@@ -1,9 +1,20 @@
-mat = input('Material: ')
-qnt = int(input('Quantidade: '))
-cont = 1
-space = qnt 
+tijolo = input('Bloco: ')
+qnt_blocos = int(input('Qnt: '))
 
-for c in range(1, qnt + 1):
-    print(f' ' * space, mat * cont)
-    cont = cont + 2
-    space = space - 1
+count = 0
+qnt_tijolo = tijolo
+qnt_vezes = qnt_blocos
+
+while count < qnt_vezes:
+    espaço = ''
+    deslocamento = 1
+
+    while deslocamento <= qnt_blocos:
+        espaço = espaço + ' '
+        deslocamento = deslocamento + 1
+
+    print(espaço,qnt_tijolo)
+
+    qnt_tijolo = qnt_tijolo + tijolo + tijolo
+    count = count + 1
+    qnt_blocos = qnt_blocos - 1
