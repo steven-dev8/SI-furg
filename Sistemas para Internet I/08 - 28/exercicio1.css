@@ -1,0 +1,12 @@
+h1 {
+    text-align: center;
+}
+.main {
+    text-align: justify;
+    font-size: 0.875em;
+}
+.date {
+    text-align: right;
+    color: blue;
+    font-size: 10px;
+}

@@ -1,0 +1,12 @@
+.serif {
+    font-family:"Times New Roman",Times, serif;
+}
+.sansserif {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.italic {
+    font-style:italic
+}
+.fontsize {
+    font-size: 0.875em;
+}
