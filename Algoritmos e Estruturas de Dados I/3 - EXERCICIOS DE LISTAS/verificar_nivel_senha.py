@@ -8,7 +8,7 @@ INVALID = False
 senha = input('Digite um senha: ')
 
 #Declara uma l-string com caracteres especiais
-CARACTERES_ESPECIAIS = "!#$%&()*+,-./:;<=>?@[\]^_`{|}~"
+CARACTERES_ESPECIAIS = r"!#$%&()*+,-./:;<=>?@[\]^_`{|}~" #o 'r' transforma a l-string em uma string bruta (raw string)
 
 #Um loop para verificar quantos tipos de caracteres diferentes contém na senha
 for caracter in senha:
@@ -16,7 +16,7 @@ for caracter in senha:
 		ALFABETICO = True
 	elif ord(caracter) >= ord('0') and ord(caracter) <= ord('9'):
 		NUMERICO = True
-	elif ord(caracter) in CARACTERES_ESPECIAIS:
+	elif caracter in CARACTERES_ESPECIAIS:
 		ESPECIAL = True
 	else:
 		INVALID = True
